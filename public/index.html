@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Meditation Playlist Player</title>
+<title>Notion Playlist Player</title>
 <meta name="theme-color" content="#191919">
 <style>
 :root{--bg:#191919;--panel:#202020;--panel2:#252525;--text:#f1f1ef;--muted:#a9a9a6;--line:#3b4149;--blue:#2f80d9;--blue2:#275f91;--chip:#596675;--danger:#ef6b73;--field:#303030;--shadow:0 18px 55px rgba(0,0,0,.34)}
@@ -17,7 +17,7 @@
 <body>
 <div class="app">
 <section class="player">
-  <div class="brand"><strong>Meditation Player</strong><span class="status-pill" id="status">Připraveno</span></div>
+  <div class="brand"><strong>Notion Playlist Player</strong><span class="status-pill" id="status">Připraveno</span></div>
   <div class="art" id="art"><div class="preview" id="preview"><span class="note">♪</span></div></div>
   <div class="now"><div class="eyebrow" id="position">Playlist je prázdný</div><div class="title" id="nowTitle">Přidej první skladbu</div><div class="source" id="nowSource">YouTube nebo vlastní audio soubor</div></div>
   <div class="timeline"><input class="range" id="seek" type="range" min="0" max="100" value="0"><div class="time-row"><span id="elapsed">0:00</span><span id="duration">0:00</span></div></div>
@@ -29,7 +29,7 @@
   <div class="volume"><span>🔈</span><input id="volume" type="range" min="0" max="100" value="80"><span>🔊</span></div>
 </section>
 <section class="playlist">
-  <div class="head"><div><h1>Playlist meditace</h1><p>Poskládej si průběh meditace. Stav přehrávání se po zavření vždy resetuje.</p></div><div class="head-actions"><button class="secondary" id="copyLink">Kopírovat embed odkaz</button><button class="secondary" id="clear">Vymazat</button></div></div>
+  <div class="head"><div><h1>Tvůj playlist</h1><p>Poskládej si vlastní audio nebo video playlist. Přehrávání se po zavření vždy resetuje.</p></div><div class="head-actions"><button class="secondary" id="copyLink">Kopírovat embed odkaz</button><button class="secondary" id="clear">Vymazat</button></div></div>
   <div class="modebar">
     <div class="segments"><button class="segment active" data-mode="sequence">Po pořadě</button><button class="segment" data-mode="shuffle">Shuffle</button></div>
     <div class="toggle-wrap"><span>Loop playlistu</span><button class="toggle" id="loop" aria-label="Loop"></button><span>Přechod</span><select class="fade-select" id="fade"><option value="0">Bez</option><option value="2" selected>2 s</option><option value="5">5 s</option></select></div>

@@ -14,7 +14,8 @@ function cleanPlaylist(input, id) {
     const src = String(track?.src || '').trim().slice(0, 2000);
     const title = String(track?.title || 'Untitled track').trim().slice(0, 500);
     if (!type || !src) return [];
-    return [{ type, src, title }];
+    const duration = Number(track?.duration);
+    return [{ type, src, title, ...(Number.isFinite(duration) && duration > 0 ? { duration: Math.round(duration) } : {}) }];
   }) : [];
 
   return {
@@ -23,7 +24,7 @@ function cleanPlaylist(input, id) {
     tracks,
     mode: ALLOWED_MODES.has(input?.mode) ? input.mode : 'sequence',
     loop: Boolean(input?.loop),
-    fade: [0, 2, 5].includes(Number(input?.fade)) ? Number(input.fade) : 2,
+    fade: [0, 2, 3, 5].includes(Number(input?.fade)) ? Number(input.fade) : 2,
     updatedAt: new Date().toISOString(),
   };
 }

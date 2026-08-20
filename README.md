@@ -10,8 +10,9 @@ A lightweight, embeddable audio and video playlist player for Notion pages.
 - Optional playlist loop
 - Fade-out transitions
 - Drag-and-drop track ordering
-- Duplicate track support
-- Shareable playlist configuration links
+- Full multi-line track titles
+- Live YouTube video backdrop
+- Page-specific playlist links
 - Fresh playback state on every page load
 
 ## Deployment
@@ -20,4 +21,4 @@ This is a static web app ready to deploy on Vercel or another static hosting pla
 
 ## Notes
 
-Local files are available only during the current browser session. Use hosted audio URLs for reusable playlist links.
+Use the base app URL for an empty template. After building a playlist, copy its page-specific link and use that URL for the embed on that page. Local files are available only during the current browser session.

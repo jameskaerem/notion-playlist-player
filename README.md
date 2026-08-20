@@ -1,4 +1,4 @@
-# Meditation Playlist Player
+# Notion Playlist Player
 
 Statická embed aplikace pro Notion a Vercel.
 

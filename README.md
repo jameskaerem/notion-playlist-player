@@ -10,7 +10,7 @@ A lightweight, embeddable audio and video playlist player for Notion pages.
 - Drag-and-drop ordering and duplicate tracks
 - Full multi-line titles, total playlist duration, and a live YouTube backdrop
 - Standalone page-specific links
-- Optional Notion automation with server-side auto-save
+- Optional Notion automation with cross-device, page-specific auto-save for the playlist, volume, playback order, loop, and transition settings
 - Fresh playback position on every page load
 
 ## Deployment

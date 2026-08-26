@@ -43,12 +43,13 @@ export async function setPlaylist(id, playlist) {
 
 export function emptyPlaylist(id) {
   return {
-    v: 3,
+    v: 4,
     id,
     tracks: [],
     mode: 'sequence',
     loop: false,
     fade: 2,
+    volume: 80,
     updatedAt: new Date().toISOString(),
   };
 }

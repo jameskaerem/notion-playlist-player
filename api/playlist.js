@@ -18,13 +18,17 @@ function cleanPlaylist(input, id) {
     return [{ type, src, title, ...(Number.isFinite(duration) && duration > 0 ? { duration: Math.round(duration) } : {}) }];
   }) : [];
 
+  const rawVolume = Number(input?.volume);
+  const volume = Number.isFinite(rawVolume) ? Math.round(Math.min(100, Math.max(0, rawVolume))) : 80;
+
   return {
-    v: 3,
+    v: 4,
     id,
     tracks,
     mode: ALLOWED_MODES.has(input?.mode) ? input.mode : 'sequence',
     loop: Boolean(input?.loop),
     fade: [0, 2, 3, 5].includes(Number(input?.fade)) ? Number(input.fade) : 2,
+    volume,
     updatedAt: new Date().toISOString(),
   };
 }

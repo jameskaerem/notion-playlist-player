@@ -7,7 +7,6 @@ A lightweight, embeddable audio and video playlist player for Notion pages.
 - YouTube, direct audio URLs, and local audio previews
 - Sequential and shuffle playback
 - Optional playlist loop and 2, 3, or 5 second fade-out/fade-in transitions
-- Smart next-track preloading to minimize pauses between tracks
 - Drag-and-drop ordering and duplicate tracks
 - Full multi-line titles, total playlist duration, and a live YouTube backdrop
 - Standalone page-specific links
